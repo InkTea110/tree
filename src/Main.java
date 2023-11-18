@@ -9,12 +9,27 @@ public class Main {
         int n =scan.nextInt();
         tree tree=new tree();
         for(int i=0;i<n;i++){
-            tree.insert(rand.nextInt(100),tree.getRoot());
+            tree.insert(rand.nextInt(100));
         }
-        tree.print(tree.getRoot());
+        tree.print();
         System.out.println();
-        System.out.println("min tree value: "+ tree.minValue(tree.getRoot()));
-        System.out.println("max tree value: "+ tree.maxValue(tree.getRoot()));
-        System.out.println("tree sum: " + tree.sum(tree.getRoot()));
+        System.out.println("min tree value: "+ tree.minValue());
+        System.out.println("max tree value: "+ tree.maxValue());
+        System.out.println("tree sum: " + tree.sum());
+        System.out.println("tree elements: " + tree.count());
+        System.out.println("avg: " + tree.avg());
+
+        uniqueTree u_tree=new uniqueTree();
+        for(int i=0;i<n;i++){
+            u_tree.insert(rand.nextInt(100));
+        }
+        u_tree.clear();
+        u_tree.print();
+        System.out.println();
+        System.out.println("min tree value: "+ u_tree.minValue());
+        System.out.println("max tree value: "+ u_tree.maxValue());
+        System.out.println("tree sum: " + u_tree.sum());
+        System.out.println("tree elements: " + u_tree.count());
+        System.out.println("avg: " + u_tree.avg());
     }
 }
