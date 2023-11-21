@@ -45,18 +45,7 @@ public void insert(int Data){
         erase(Data,Root);
 
     }
-    private void erase(int Data,Element Root){
-        if(Root==null) return;
-        if(Data==Root.Data){
-            if(Root.Left==Root.Right){
-                Root=null;
-                System.gc();
-            }
-            else{
 
-            }
-        }
-    }
     public void clear(){
         Root=null;
         System.gc();
