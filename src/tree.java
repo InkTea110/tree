@@ -41,10 +41,7 @@ public void insert(int Data){
             else insert(Data,Root.Right);
         }
     }
-    public void erase(int Data){
-        erase(Data,Root);
 
-    }
 
     public void clear(){
         Root=null;
